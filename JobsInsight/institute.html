@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+
+  <title>JobsInsight | Recruiting Reinvented</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+<!-- Toastify CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- Bootstrap CSS -->
+
+  <!-- MDB CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/css/mdb.min.css" rel="stylesheet">
+
+  <!-- MDB JS (includes Popper.js) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/js/mdb.min.js"></script>
+  <!-- Bootstrap JS and Popper.js -->
+
+  <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow sticky-top p-0" >
+    <div class="container  " >
+      <a class="navbar-brand d-flex align-items-center text-center py-0 px-4 m-10" href="index.html">
+        <img src="img/JOBSINSIGHT.webp" alt="" width="80px"
+          style="max-height: fit-content;margin-top: 5px;margin-bottom: 5px;margin-right: -1px;">
+        <div class="ml-10 mr-60">
+          <h2 class="m-0 px-3" style="color: #00B074;">JobsInsight</h2>
+          <h6>Recruiting Reinvented</h6>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-right " id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-auto p-lg-0 ">
+          <li class="nav-item fsr" >
+            <a class="nav-link active fsr" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fsr" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false">
+              About Us
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu  me-auto" aria-labelledby="navbarDropdown"
+              style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #00B074;" ;>
+              <div class="container bg-green">
+                <div class="row my-4 mx-auto">
+                  <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="aboutus.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">About Us</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Recruitment Expertise</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Business Profile</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Achievements</a>
+                      <!-- <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a> -->
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Services</a>
+                      <a href="evaluation.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Evaluation</a>
+                      <a href="soft_skill.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Soft Skills</a>
+                      <a href="resume_building.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Resume Building
+                      </a>
+                      <a href="carrier_guidence.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Carrier Guidence Program
+                      </a>
+                      <!-- <a href="" class="list-group-item list-group-item-action">Provident dolor</a> -->
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Iste quaerato</a>
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Est iure</a>
+                      <a href="" class="list-group-item list-group-item-action">Praesentium</a>
+                      <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Saepe</a>
+                      <a href="" class="list-group-item list-group-item-action">Vel alias</a>
+                      <a href="" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                      <a href="" class="list-group-item list-group-item-action">Cum dolores</a>
+                    </div> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="blog.html">Jobs</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link fsr" href="job-seekers.html">Job Seekers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="employers.html">Employers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="institute.html">Institute Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="openings.html">Current Openings</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="life_jobsinsight.html">Life@JobsInsight</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link fsr" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item create-account">
+            <a class="nav-link" href="job-seekers.html">Register</a>
+            <ul class="dropdown-menu" style="color: #060606; text-align: center; position: absolute; top: 100%; left: 0; z-index: 1000;">
+              <li class="nav-item"><a class="nav-link" href="job-seekers.html">Job Seekers</a></li>
+              <li class="nav-item"><a class="nav-link" href="employers.html">Employers</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+    <div id="rs-my-account" class="rs-my-account pt-100 pb-100 lg-pt-57 lg-pb-80" style="background: #121212 url('https://www.pracworld.com/assets/images/about/employee.png') fixed;background-size: cover;opacity: 1;">
+        <div class="container" style="padding-top: 5rem!important;">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="contact-page centered">
+              <div class="regi-side ms-auto  p-4" style="background-color: rgba(255,255,255,0.9)";>
+                <div class="sec-title">
+                  <h2 class="title">Registration</h2>
+                </div>
+                <form class="institute-form" enctype="multipart/form-data" id="institute-form" method="post" action="institute.php">
+                  <div class="mb-3">
+                    <label class="form-label fw-bold">Institute Name <span class="text-danger">*</span></label>
+                    <input class="form-control" type="text" name="name" required="" placeholder="Institute Name">
+                  </div>
+      
+                  <div class="mb-3">
+                    <label class="form-label fw-bold">Email Address <span class="text-danger">*</span></label>
+                    <input class="form-control" type="email" name="email" required="" placeholder="Email ID">
+                  </div>
+      
+                  <div class="mb-3">
+                    <label class="form-label fw-bold">Mobile No. <span class="text-danger">*</span></label>
+                    <input class="form-control" type="text" name="mobile" required="" placeholder="Mobile no.">
+                  </div>
+      
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="mb-3">
+                        <label class="form-label fw-bold">Gender <span class="text-danger">*</span></label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="male" required="">
+                          <label class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gender" value="female" required="">
+                          <label class="form-check-label">Female</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <!-- Day select -->
+                          <label class="input-label fw-bold"style="color: rgba(0,0,0,.6);">Date of Birth <span class="text-danger">*</span></label>
+                         
+                          <select name="day" class="date" required="">
+                            <option value="" selected="" disabled="disabled">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        </div>
+                        <div class="col-md-4">
+                          <!-- Month select -->
+                          <select name="month" class="date" required="">
+                            <option value="" selected="" disabled="disabled">Month</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sept</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        </div>
+                        <div class="col-md-4">
+                          <!-- Year select -->
+                          <select name="year" class="date" required="">
+                            <option value="" selected="" disabled="disabled">Year</option>
+                            
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                            <option value="1989">1989</option>
+                            <option value="1988">1988</option>
+                            <option value="1987">1987</option>
+                            <option value="1986">1986</option>
+                            <option value="1985">1985</option>
+                            <option value="1984">1984</option>
+                            <option value="1983">1983</option>
+                            <option value="1982">1982</option>
+                            <option value="1981">1981</option>
+                            <option value="1980">1980</option>
+                            <option value="1979">1979</option>
+                            <option value="1978">1978</option>
+                            <option value="1977">1977</option>
+                            <option value="1976">1976</option>
+                            <option value="1975">1975</option>
+                            <option value="1974">1974</option>
+                            <option value="1973">1973</option>
+                            <option value="1972">1972</option>
+                            <option value="1971">1971</option>
+                            <option value="1970">1970</option>
+                            <option value="1969">1969</option>
+                            <option value="1968">1968</option>
+                            <option value="1967">1967</option>
+                            <option value="1966">1966</option>
+                            <option value="1965">1965</option>
+                            <option value="1964">1964</option>
+                            <option value="1963">1963</option>
+                            <option value="1962">1962</option>
+                            <option value="1961">1961</option>
+                            <option value="1960">1960</option>
+                        </select>
+                        
+                      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 mb-3"> <!-- Address -->
+                        <label class="input-label mb-3 fw-bold"style="color: rgba(0,0,0,.6);">Address <span class="text-danger">*</span></label>
+                        <input class="custom-placeholder form-control" type="text" name="address" required="" placeholder="Address">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-12 mb-3"> <!-- City -->
+                        <label class="input-label fw-bold" style="color: rgba(0,0,0,.6);">City <span class="text-danger">*</span></label>
+                        <input class="custom-placeholder form-control" type="text" name="city" required="" placeholder="City">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-12 mb-3"> <!-- Country -->
+                        <label class="input-label fw-bold" style="color: rgba(0,0,0,.6);">Country <span class="text-danger">*</span></label>
+                        <input class="custom-placeholder form-control" type="text" name="country" required="" placeholder="Country">
+                    </div>
+                </div>
+            
+                <div class="col-12 mb-3"> <!-- Applied for -->
+                    <label class="input-label mb-3 fw-bold" style="color: rgba(0,0,0,.6);">Applied for <span class="text-danger">*</span></label>
+                    <input class="custom-placeholder form-control" type="text" name="post" required="" placeholder="Post Applied for">
+                </div>
+                  <div class="mb-3" style="padding-bottom: 10px;">
+                      <label class="input-label fw-bold" style="color: rgba(0,0,0,.6);">Applied for which Country <span class="text-danger">*</span></label>
+                      
+                      <select class="form-control custom-placeholder" name="appcountry" required="" style="padding: 7px;
+                                  color: #363636;
+                                  border-radius: 3px;
+                                  outline: unset;
+                                  border: 1px solid #e4e4e4;
+                                  margin-right: 15px;">
+                          <option value="" selected="">Select Country</option>
+                          <option value="India">India</option>
+                          <option value="Gulf">Gulf</option>
+                          <option value="Africa">Africa</option>
+                          <option value="Australia">Australia</option>
+                      </select>    
+                  </div>
+                  
+  
+                  <!-- ... (other form fields) ... -->
+      
+                  <div class="mb-3">
+                    <label class="form-label fw-bold" style="color: rgba(0,0,0,.6);">Attach Resume <span class="text-danger">*</span></label>
+                    <input class="form-control" type="file" name="userfile" required="" accept=".pdf">
+                    <div class="form-text" style="color: blue; font-size: 13px;">Note: Only .pdf, .doc, .docx file Format are Supported. </div>
+                  </div>
+      
+                  <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" required="">
+                    <label class="form-check-label">I agree to the User Agreement and <a href="#">Terms &amp; Conditions</a>.</label>
+                  </div>
+      
+                  <div class="submit-btn">
+                    <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- Footer
+  <footer >
+    <div class="container text-center bg-dark text-white text-md-start">
+      <div class="footer-wrap text-light">
+        <div class="about">
+          <img src="img/JOBSINSIGHT.webp" alt="" width="100px" style="max-height: 70px;">
+          <p class="text-muted py-4">
+            JobsInsight | Recruitment Reinvented
+          </p>
+          <div class="social-media">
+            <a href="" class="me-2 text-reset"><img src="img/icon/facebook-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/twitter-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/linkedin-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/instagram-icon.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="company">
+          <h6 class="fw-bold">JobsInsight</h6>
+          <p><a href="aboutus.html">About us</a></p>
+          <p><a href="blog.html">Services</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="single-post.html">Blog</a></p>
+          <p><a href="index.html">Login</a></p>
+        </div>
+
+        <div class="useful-links">
+          <h6 class="fw-bold">Useful links</h6>
+          <p><a href="">Terms of </a></p>
+          <p><a href="">Services</a></p>
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Documentation</a></p>
+
+          <p><a href="">Components</a></p>
+        </div>
+
+        <div class="newsletter">
+          <h6 class="fw-bold">Newsletter</h6>
+          <p class="text-muted">Sign up and receive the latest tips
+            via email.</p>
+          <form id="subscribe" action="">
+            <label for="email">Youre e-mail:</label>
+            <input type="email" placeholder="e-mail:" name="email" required>
+            <button type="submit" class="main-btn">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>&copy; Created by <a href="https://firmbee.com/solutions/project-management/"
+            title="Firmbee - Free Project Management System">Sumera Arif</a></p>
+
+      </div>
+    </div>
+
+  </footer> -->
+  <footer id="rs-footer" class="rs-footer" style="background: #121212 url(https://www.pracworld.com/assets/images/about/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;">
+          <div style="background-color: rgba(17, 17, 17, 0.8);">
+          <div class="container">
+             <!--  <div class="footer-newsletter">
+                  <div class="row y-middle">
+                      <div class="col-md-6 sm-mb-26">
+                          <h3 class="title white-color mb-0">Newsletter Subscribe</h3>
+                      </div>
+                      <div class="col-md-6 text-right">
+                          <form class="newsletter-form">
+                              <input type="email" name="email" placeholder="Your email address" required="">
+                              <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div> -->
+
+              <div class="container text-center text-md-start">
+                <div class="footer-wrap">
+                  <div class="about">
+                    <img src="img/JOBSINSIGHT.webp" alt="" width="100px" style="max-height: 70px;">
+                    <p class="text-muted py-4">
+                      JobsInsight | Recruitment Reinvented
+                    </p>
+                    <div class="social-media">
+                      <a href="" class="me-2 text-reset"><img src="img/icon/facebook-icon.svg" alt=""></a>
+                      <a href="" class="me-2 text-reset"><img src="img/icon/twitter-icon.svg" alt=""></a>
+                      <a href="" class="me-2 text-reset"><img src="img/icon/linkedin-icon.svg" alt=""></a>
+                      <a href="" class="me-2 text-reset"><img src="img/icon/instagram-icon.svg" alt=""></a>
+                    </div>
+                  </div>
+          
+                  <div class="company">
+                    <h6 class="fw-bold">JobsInsight</h6>
+                    <p><a href="aboutus.html">About us</a></p>
+                    <p><a href="blog.html">Services</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p><a href="single-post.html">Blog</a></p>
+                    <p><a href="index.html">Login</a></p>
+                  </div>
+          
+                  <div class="useful-links">
+                    <h6 class="fw-bold">Useful links</h6>
+                    <p><a href="">Terms of </a></p>
+                    <p><a href="">Services</a></p>
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Documentation</a></p>
+          
+                    <p><a href="">Components</a></p>
+                  </div>
+          
+                  <div class="newsletter">
+                    <h6 class="fw-bold">Newsletter</h6>
+                    <p class="text-muted">Sign up and receive the latest tips
+                      via email.</p>
+                    <form id="subscribe" action="">
+                      <label for="email">Youre e-mail:</label>
+                      <input type="email" placeholder="e-mail:" name="email" required>
+                      <button type="submit" class="main-btn">Subscribe</button>
+                    </form>
+                  </div>
+          
+                </div>
+                <div class="copyright">
+                  <p>&copy; Created by <a href="https://firmbee.com/solutions/project-management/"
+                      title="Firmbee - Free Project Management System"></a></p>
+          
+                </div>
+              </div>
+             </div>
+             </div>
+            
+                    
+      </footer>
+
+      <script>
+        document.getElementById("institute-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+      
+            const formData = new FormData(this);
+      
+            fetch("institute.php", {
+                method: "POST",
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(message => {
+                // Check the message for success or error
+                if (message.includes("Record inserted successfully")) {
+                    // Show a success toast
+                    Toastify({
+                        text: message,
+                        duration: 3000,
+                        newWindow: true,
+                        close: true,
+                        gravity: "top",
+                        position: "center",
+                        backgroundColor: "green",
+                        callback: function() {
+                        // Reset the form after the toast is displayed
+                        document.getElementById("institute-form").reset();
+                    }
+                    }).showToast();
+                } else {
+                    // Show an error toast
+                    Toastify({
+                        text: message,
+                        duration: 3000,
+                        newWindow: true,
+                        close: true,
+                        gravity: "top",
+                        position: "center",
+                        backgroundColor: "red",
+                    }).showToast();
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("An error occurred. Please try again.");
+            });
+        });
+      </script>
+      
+      
+
+    
+</body>
+</html>

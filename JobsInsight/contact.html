@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+  <title>JobsInsight | Recruiting Reinvented</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Toastify CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- MDB CSS -->
+<link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/css/mdb.min.css" rel="stylesheet">
+
+<!-- MDB JS (includes Popper.js) -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/js/mdb.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!-- WOW.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+
+<!-- WOW.js JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/wow.js@1.3.0/dist/wow.min.js"></script> -->
+
+  <!-- MDB CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/css/mdb.min.css" rel="stylesheet">
+
+  <!-- MDB JS (includes Popper.js) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@3.11.0/js/mdb.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+
+ <!-- Fetch API Polyfill for older browsers -->
+ <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <!-- Bootstrap JS and Popper.js -->
+
+  <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow sticky-top p-0" >
+    <div class="container  " >
+      <a class="navbar-brand d-flex align-items-center text-center py-0 px-4 m-10" href="index.html">
+        <img src="img/JOBSINSIGHT.webp" alt="" width="80px"
+          style="max-height: fit-content;margin-top: 5px;margin-bottom: 5px;margin-right: -1px;">
+        <div class="ml-10 mr-60">
+          <h2 class="m-0 px-3" style="color: #00B074;">JobsInsight</h2>
+          <h6>Recruiting Reinvented</h6>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-right " id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-auto p-lg-0 ">
+          <li class="nav-item fsr" >
+            <a class="nav-link active fsr" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle fsr" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false">
+              About Us
+            </a>
+            <!-- Dropdown menu -->
+            <div class="dropdown-menu  me-auto" aria-labelledby="navbarDropdown"
+              style="border-top-left-radius: 0; border-top-right-radius: 0; background-color: #00B074;" ;>
+              <div class="container bg-green">
+                <div class="row my-4 mx-auto">
+                  <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="aboutus.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">About Us</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Recruitment Expertise</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Business Profile</a>
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Achievements</a>
+                      <!-- <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a> -->
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 mb-3 mb-lg-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Services</a>
+                      <a href="evaluation.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Evaluation</a>
+                      <a href="soft_skill.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Soft Skills</a>
+                      <a href="resume_building.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Resume Building
+                      </a>
+                      <a href="carrier_guidence.html" class="list-group-item list-group-item-action text-center fsr"
+                        style="text-decoration: none;">Carrier Guidence Program
+                      </a>
+                      <!-- <a href="" class="list-group-item list-group-item-action">Provident dolor</a> -->
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Iste quaerato</a>
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Est iure</a>
+                      <a href="" class="list-group-item list-group-item-action">Praesentium</a>
+                      <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="list-group list-group-flush">
+                      <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
+                      <a href="" class="list-group-item list-group-item-action">Saepe</a>
+                      <a href="" class="list-group-item list-group-item-action">Vel alias</a>
+                      <a href="" class="list-group-item list-group-item-action">Sunt doloribus</a>
+                      <a href="" class="list-group-item list-group-item-action">Cum dolores</a>
+                    </div> -->
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="blog.html">Jobs</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link fsr" href="job-seekers.html">Job Seekers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="employers.html">Employers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="institute.html">Institute Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fsr" href="openings.html">Current Openings</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="life_jobsinsight.html">Life@JobsInsight</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link fsr" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign in</a>
+          </li>
+          <li class="nav-item create-account">
+            <a class="nav-link" href="job-seekers.html">Register</a>
+            <ul class="dropdown-menu" style="color: #060606; text-align: center; position: absolute; top: 100%; left: 0; z-index: 1000;">
+              <li class="nav-item"><a class="nav-link" href="job-seekers.html">Job Seekers</a></li>
+              <li class="nav-item"><a class="nav-link" href="employers.html">Employers</a></li>
+            </ul>
+          </li>
+          
+          
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/img3.webp" alt="" style="max-width: 600px; height: 700px;">
+          </div>
+          <div class="col-lg-6 mx-auto">
+            <div class="contact-page centered">
+             
+              <div class="line"></div>
+              <p style="color: black;">
+
+                " Jobsinsight "has established itself as a trustworthy organization that has created consistent value in terms of qualified professionals."</p>
+              <div class="line"></div>
+              <form id="contactForm" action="contact1.php" method="POST" enctype="multipart/form-data">
+                <!-- Name input -->
+                <div class="mb-3">
+                    <input class="form-control" name="name" type="text" placeholder="Name *" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div>
+            
+                <!-- Email address input -->
+                <div class="mb-3">
+                    <input class="form-control" name="emailAddress" type="email" placeholder="Email Address *"
+                        data-sb-validations="required, email" />
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+            
+                <!-- Education input -->
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="Education" placeholder="Your Education">
+                        <label for="Education">Education</label>
+                    </div>
+                </div>
+            
+                <!-- Mobile input -->
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="mobile" placeholder="Mobile Number">
+                        <label for="mobile">Mobile Number</label>
+                    </div>
+                </div>
+            
+                <!-- Resume input -->
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <input type="file" class="form-control" name="resume" placeholder="Resume">
+                        <label for="resume">Resume</label>
+                    </div>
+                </div>
+            
+                <!-- Position input -->
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <textarea class="form-control" name="position" placeholder="Position" style="height: 50px"></textarea>
+                        <label for="position">Position</label>
+                    </div>
+                </div>
+            
+                <!-- Message input -->
+                <div class="mb-3">
+                    <textarea class="form-control" name="message" placeholder="Leave a Message" style="height: 10rem;"
+                        data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                </div>
+            
+                <!-- Form submissions success message -->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">Form submission successful!</div>
+                </div>
+            
+                <!-- Form submissions error message -->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+            
+                <!-- Form submit button -->
+                <div class="d-grid">
+                    <button class="main-btn mt-0 disabled" id="submitButton" type="submit">Send message</button>
+                </div>
+            </form>
+            
+            </div>
+          </div>
+
+          <div class="row g-4 py-5">
+            <div class="col-12">
+              <div class="row gy-4">
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+                  <div class="d-flex align-items-center bg-light rounded p-4">
+                    <div
+                      class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
+                      style="width: 45px; height: 45px;">
+                      <i class="fa fa-map-marker-alt text-primary"></i>
+                    </div>
+                    <span>Nana Peth, Pune 411011</span>
+                  </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="d-flex align-items-center bg-light rounded p-4">
+                    <div
+                      class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
+                      style="width: 45px; height: 45px;">
+                      <i class="fa fa-envelope-open text-primary"></i>
+                    </div>
+                    <span>jobsinsight.in@gmail.com</span>
+                  </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="d-flex align-items-center bg-light rounded p-4">
+                    <div
+                      class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
+                      style="width: 45px; height: 45px;">
+                      <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <span>7709275590</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <iframe class="position-relative rounded w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+              <div class="wow fadeInUp" data-wow-delay="0.5s">
+                <h3 style="text-align: center;">Get In Touch!</h3>
+                <form id="contactForm1" action="process_contact.php" method="POST">
+                  <div class="row g-3">
+                      <div class="col-md-6">
+                          <div class="form-floating">
+                              <input type="text" class="form-control" name="name" placeholder="Your Name">
+                              <label for="name">Your Name</label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-floating">
+                              <input type="email" class="form-control" name="email" placeholder="Your Email">
+                              <label for="email">Your Email</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="form-floating">
+                              <input type="text" class="form-control" name="subject" placeholder="Subject">
+                              <label for="subject">Subject</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <div class="form-floating">
+                              <textarea class="form-control" name="message" placeholder="Leave a message here"
+                                  style="height: 150px"></textarea>
+                              <label for="message">Message</label>
+                          </div>
+                      </div>
+                      <div class="col-12">
+                          <button class="btn w-100 py-3" type="submit" style="background-color: #00B074;color: white;">Send Message
+                          </button>
+                      </div>
+                  </div>
+              </form>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5">
+          <h5 class="mx-auto" style="text-align: center;">Are you getting rejected due to lack of skillset? Do you get
+            overwhelmed due to questions?
+            Don’t worry, let us help you.<br> Our Career Guidance Program will help you prepare for
+            interview. Drop a number and we will call you back.</h5>
+          <br>
+          <div class="col-lg-9 mx-auto py-4">
+            <form id="contactForm2" action="callback.php" method="POST">
+              <div class="row g-3">
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                          <label for="name"> Name</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-floating">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                          <label for="email"> Email</label>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" id="subject" name="mobileNumber" placeholder="Mobile Number">
+                          <label for="subject">Mobile Number</label>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <button class="btn w-100 py-3" type="submit" style="background-color: #00B074;color: white;">Send</button>
+                  </div>
+              </div>
+          </form>
+          
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="footer-wrap">
+        <div class="about">
+          <img src="img/JOBSINSIGHT.webp" alt="" width="100px" style="max-height: 70px;">
+          <p class="text-muted py-4">
+            JobsInsight | Recruitment Reinvented
+          </p>
+          <div class="social-media">
+            <a href="" class="me-2 text-reset"><img src="img/icon/facebook-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/twitter-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/linkedin-icon.svg" alt=""></a>
+            <a href="" class="me-2 text-reset"><img src="img/icon/instagram-icon.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="company">
+          <h6 class="fw-bold">JobsInsight</h6>
+          <p><a href="aboutus.html">About us</a></p>
+          <p><a href="blog.html">Services</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="single-post.html">Blog</a></p>
+          <p><a href="index.html">Login</a></p>
+        </div>
+
+        <div class="useful-links">
+          <h6 class="fw-bold">Useful links</h6>
+          <p><a href="">Terms of </a></p>
+          <p><a href="">Services</a></p>
+          <p><a href="">Privacy Policy</a></p>
+          <p><a href="">Documentation</a></p>
+
+          <p><a href="">Components</a></p>
+        </div>
+
+        <div class="newsletter">
+          <h6 class="fw-bold">Newsletter</h6>
+          <p class="text-muted">Sign up and receive the latest tips
+            via email.</p>
+          <form id="subscribeForm" action="process_subscription.php" method="POST">
+            <label for="email">Your Email:</label>
+            <input type="email" placeholder="Email:" name="email" required>
+            <input type="hidden" name="subscription_type" value="newsletter">
+            <button type="submit" class="main-btn">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>&copy; Created by <a href="https://firmbee.com/solutions/project-management/"
+            title="Firmbee - Free Project Management System"></a></p>
+
+      </div>
+    </div>
+
+  </footer>
+<!-- please let us know form script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+  
+        fetch("contact1.php", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(message => {
+            // Check the message for success or error
+            if (message.includes("Record inserted successfully")) {
+                // Show a success toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "green",
+                    callback: function() {
+                    // Reset the form after the toast is displayed
+                    document.getElementById("contactForm").reset();
+                }
+                }).showToast();
+            } else {
+                // Show an error toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "red",
+                }).showToast();
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again.");
+        });
+    });
+  </script>
+  <!-- Get in touch form -->
+  <script>
+    document.getElementById("contactForm1").addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+  
+        fetch("process_contact.php", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(message => {
+            // Check the message for success or error
+            if (message.includes("Record inserted successfully")) {
+                // Show a success toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "green",
+                    callback: function() {
+                    // Reset the form after the toast is displayed
+                    document.getElementById("contactForm1").reset();
+                }
+                }).showToast();
+            } else {
+                // Show an error toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "red",
+                }).showToast();
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again.");
+        });
+    });
+  </script>
+  <!-- Getting rejected drop info will call back -->
+  <script>
+    document.getElementById("contactForm2").addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        const formData = new FormData(this);
+  
+        fetch("callback.php", {
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.text())
+        .then(message => {
+            // Check the message for success or error
+            if (message.includes("Record inserted successfully")) {
+                // Show a success toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "green",
+                    callback: function() {
+                    // Reset the form after the toast is displayed
+                    document.getElementById("contactForm2").reset();
+                }
+                }).showToast();
+            } else {
+                // Show an error toast
+                Toastify({
+                    text: message,
+                    duration: 3000,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    position: "center",
+                    backgroundColor: "red",
+                }).showToast();
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again.");
+        });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+</html>

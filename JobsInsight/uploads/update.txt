@@ -1,0 +1,210 @@
+$id = mysqli_real_escape_string($conn,$_POST['id']);
+    // $photo=mysqli_real_escape_string($conn,$_POST['photo']);
+    $trainingCourse =mysqli_real_escape_string($conn, $_POST["trainingCourse"]);
+    $trainingFees = mysqli_real_escape_string($conn,$_POST["trainingFees"]);
+    $counsellors_name =mysqli_real_escape_string($conn, $_POST["counsellors_name"]);
+    $firstName = mysqli_real_escape_string($conn,$_POST["firstName"]);
+    $middleName = mysqli_real_escape_string($conn,$_POST["middleName"]);
+    $lastName = mysqli_real_escape_string($conn,$_POST["lastName"]);
+    $dateOfBirth = mysqli_real_escape_string($conn,$_POST["dateOfBirth"]);
+    $age =mysqli_real_escape_string($conn, $_POST["age"]);
+    $permanentAddress = mysqli_real_escape_string($conn,$_POST["permanentAddress"]);
+    $mobile = mysqli_real_escape_string($conn,$_POST["mobile"]);
+    $email = mysqli_real_escape_string($conn,$_POST["email"]);
+    $mothersName = mysqli_real_escape_string($conn,$_POST["mothersName"]);
+    $same_as_permanent = mysqli_real_escape_string($conn,isset($_POST['same_as_permanent']) ? 1 : 0);
+    $correspondenceAddress = mysqli_real_escape_string($conn,$same_as_permanent ? $permanentAddress : $_POST['correspondenceAddress']);
+    $physicallyChallenged = mysqli_real_escape_string($conn,$_POST["physicallyChallenged"]);
+    $ssc_instituteName = mysqli_real_escape_string($conn,$_POST["ssc_instituteName"]); 
+    $ssc_place = mysqli_real_escape_string($conn,$_POST["ssc_place"]);
+    $ssc_university =mysqli_real_escape_string($conn, $_POST["ssc_university"]);
+    $ssc_percentage =mysqli_real_escape_string($conn, $_POST["ssc_percentage"]);
+    $ssc_yearOfPassing = mysqli_real_escape_string($conn,$_POST["ssc_yearOfPassing"]);
+    $hsc_instituteName = mysqli_real_escape_string($conn,$_POST["hsc_instituteName"]); 
+    $hsc_place = mysqli_real_escape_string($conn,$_POST["hsc_place"]);
+    $hsc_university = mysqli_real_escape_string($conn,$_POST["hsc_university"]);
+    $hsc_percentage =mysqli_real_escape_string($conn, $_POST["hsc_percentage"]);
+    $hsc_yearOfPassing =mysqli_real_escape_string($conn, $_POST["hsc_yearOfPassing"]);
+    $graduation_instituteName = mysqli_real_escape_string($conn,$_POST["graduation_instituteName"]); 
+    $graduation_place = mysqli_real_escape_string($conn,$_POST["graduation_place"]);
+    $graduation_university = mysqli_real_escape_string($conn,$_POST["graduation_university"]);
+    $graduation_percentage = mysqli_real_escape_string($conn,$_POST["graduation_percentage"]);
+    $graduation_yearOfPassing = mysqli_real_escape_string($conn,$_POST["graduation_yearOfPassing"]);
+    $postgraduation_instituteName = mysqli_real_escape_string($conn,$_POST["postgraduation_instituteName"]); 
+    $postgraduation_place =mysqli_real_escape_string($conn, $_POST["postgraduation_place"]);
+    $postgraduation_university = mysqli_real_escape_string($conn,$_POST["postgraduation_university"]);
+    $postgraduation_percentage = mysqli_real_escape_string($conn,$_POST["postgraduation_percentage"]);
+    $postgraduation_yearOfPassing = mysqli_real_escape_string($conn,$_POST["postgraduation_yearOfPassing"]);
+    $achievement_text =mysqli_real_escape_string($conn, $_POST["achievement_text"]);
+    $activity_text = mysqli_real_escape_string($conn,$_POST["activity_text"]);
+    $hobbies_interests_text= mysqli_real_escape_string($conn,$_POST["hobbies_interests_text"]);
+    $english_read = mysqli_real_escape_string($conn,$_POST["english_read"]?? '');
+    $english_write = mysqli_real_escape_string($conn,$_POST["english_write"]?? '');
+    $english_speak = mysqli_real_escape_string($conn,$_POST["english_speak"]?? '');
+    $hindi_speak =mysqli_real_escape_string($conn, $_POST["hindi_speak"]?? '');
+    $hindi_read =mysqli_real_escape_string($conn, $_POST["hindi_read"]?? '');
+    $hindi_write = mysqli_real_escape_string($conn,$_POST["hindi_write"]?? '');
+    $marathi_speak = mysqli_real_escape_string($conn,$_POST["marathi_speak"]?? '');
+    $marathi_read = mysqli_real_escape_string($conn,$_POST["marathi_read"]?? '');
+    $marathi_write = mysqli_real_escape_string($conn,$_POST["marathi_write"]?? '');
+    $first_ref_name = mysqli_real_escape_string($conn,$_POST["first_ref_name"]);
+    $first_ref_address = mysqli_real_escape_string($conn,$_POST["first_ref_address"]);
+    $first_ref_relation = mysqli_real_escape_string($conn,$_POST["first_ref_relation"]);
+    $first_ref_mobile = mysqli_real_escape_string($conn,$_POST["first_ref_mobile"]);
+    $first_ref_email =mysqli_real_escape_string($conn, $_POST["first_ref_email"]);
+    $second_ref_name = mysqli_real_escape_string($conn,$_POST["second_ref_name"]);
+    $second_ref_address = mysqli_real_escape_string($conn,$_POST["second_ref_address"]);
+    $second_ref_relation = mysqli_real_escape_string($conn,$_POST["second_ref_relation"]);
+    $second_ref_mobile =mysqli_real_escape_string($conn, $_POST["second_ref_mobile"]);
+    $second_ref_email = mysqli_real_escape_string($conn,$_POST["second_ref_email"]);
+    $experience = mysqli_real_escape_string($conn,$_POST["experience"]);
+    $organization =mysqli_real_escape_string($conn, $_POST["organization"]); 
+    $designation = mysqli_real_escape_string($conn,$_POST["designation"]);
+    $from_date = mysqli_real_escape_string($conn,$_POST["from_date"]);
+    // Convert empty date input to NULL
+    $from_date = !empty($from_date) ? date("Y-m-d", strtotime($from_date)) : null;
+
+    $to_date = mysqli_real_escape_string($conn,$_POST["to_date"]);
+
+    // Convert empty date input to NULL
+    $to_date = !empty($to_date) ? date("Y-m-d", strtotime($to_date)) : null;
+
+    $organization1 = mysqli_real_escape_string($conn,$_POST["organization1"]); 
+    $designation1 = mysqli_real_escape_string($conn,$_POST["designation1"]);
+    $from_date1 = mysqli_real_escape_string($conn,$_POST["from_date1"]);
+    // Convert empty date input to NULL
+    $from_date1 = !empty($from_date1) ? date("Y-m-d", strtotime($from_date1)) : null;
+
+    $to_date1 = mysqli_real_escape_string($conn,$_POST["to_date1"]);
+
+    // Convert empty date input to NULL
+    $to_date1 = !empty($to_date1) ? date("Y-m-d", strtotime($to_date1)) : null;
+    $pune = mysqli_real_escape_string($conn,$_POST["pune"]?? '');
+    $mumbai = mysqli_real_escape_string($conn,$_POST["mumbai"]?? '');
+    $bangalore =mysqli_real_escape_string($conn, $_POST["bangalore"]?? '');
+    $courseName =mysqli_real_escape_string($conn, $_POST["courseName"]);
+    $courseFees =mysqli_real_escape_string($conn, $_POST["courseFees"]);
+    $fee = mysqli_real_escape_string($conn,$_POST["fee"]);
+    $amount = mysqli_real_escape_string($conn,$_POST["amount"]);
+    $Schedule = mysqli_real_escape_string($conn,$_POST["Schedule"]);
+    $paymentType =mysqli_real_escape_string($conn, $_POST['paymentType']);
+    $leftFees = mysqli_real_escape_string($conn,$_POST["leftFees"]);
+    $paymentMode =mysqli_real_escape_string($conn, $_POST["paymentMode"]);
+    $EMI_NO_1 = mysqli_real_escape_string($conn,$_POST["EMI_NO_1"]);
+    $EMI_NO_1_date = mysqli_real_escape_string($conn,$_POST["EMI_NO_1_date"]);
+    $EMI_NO_1_Amount = mysqli_real_escape_string($conn,$_POST["EMI_NO_1_Amount"]);
+    $EMI_NO_2 = mysqli_real_escape_string($conn,$_POST["EMI_NO_2"]);
+    $EMI_NO_2_date = mysqli_real_escape_string($conn,$_POST["EMI_NO_2_date"]);
+    $EMI_NO_2_Amount = mysqli_real_escape_string($conn,$_POST["EMI_NO_2_Amount"]);
+    $EMI_NO_3 = mysqli_real_escape_string($conn,$_POST["EMI_NO_3"]);
+    $EMI_NO_3_date = mysqli_real_escape_string($conn,$_POST["EMI_NO_3_date"]);
+    $EMI_NO_3_Amount =mysqli_real_escape_string($conn, $_POST["EMI_NO_3_Amount"]);
+    // $signature = mysqli_real_escape_string($conn,$_POST["signature"]);
+    $date_submission =mysqli_real_escape_string($conn, $_POST["date_submission"]);
+
+    $updateQuery = "UPDATE students_form SET 
+    trainingCourse='$trainingCourse',
+    trainingFees='$trainingFees',
+    counsellors_name='$counsellors_name',
+    firstName='$firstName',
+    middleName='$middleName',
+    lastName='$lastName',
+    dateOfBirth='$dateOfBirth',
+    age='$age',
+    permanentAddress='$permanentAddress',
+    mobile='$mobile',
+    email='$email',
+    mothersName='$mothersName',
+    same_as_permanent='$same_as_permanent',
+    correspondenceAddress='$correspondenceAddress',
+    physicallyChallenged='$physicallyChallenged',
+    ssc_instituteName='$ssc_instituteName',
+    ssc_place='$ssc_place',
+    ssc_university='$ssc_university',
+    ssc_percentage='$ssc_percentage',
+    ssc_yearOfPassing='$ssc_yearOfPassing',
+    hsc_instituteName='$hsc_instituteName',
+    hsc_place='$hsc_place',
+    hsc_university='$hsc_university',
+    hsc_percentage='$hsc_percentage',
+    hsc_yearOfPassing='$hsc_yearOfPassing',
+    graduation_instituteName='$graduation_instituteName',
+    graduation_place='$graduation_place',
+    graduation_university='$graduation_university',
+    graduation_percentage='$graduation_percentage',
+    graduation_yearOfPassing='$graduation_yearOfPassing',
+    postgraduation_instituteName='$postgraduation_instituteName',
+    postgraduation_place='$postgraduation_place',
+    postgraduation_university='$postgraduation_university',
+    postgraduation_percentage='$postgraduation_percentage',
+    postgraduation_yearOfPassing='$postgraduation_yearOfPassing',
+    achievement_text='$achievement_text',
+    activity_text='$activity_text',
+    hobbies_interests_text='$hobbies_interests_text',
+    english_read='$english_read',
+    english_write='$english_write',
+    english_speak='$english_speak',
+    hindi_speak='$hindi_speak',
+    hindi_read='$hindi_read',
+    hindi_write='$hindi_write',
+    marathi_speak='$marathi_speak',
+    marathi_read='$marathi_read',
+    marathi_write='$marathi_write',
+    first_ref_name='$first_ref_name',
+    first_ref_address='$first_ref_address',
+    first_ref_relation='$first_ref_relation',
+    first_ref_mobile='$first_ref_mobile',
+    first_ref_email='$first_ref_email',
+    second_ref_name='$second_ref_name',
+    second_ref_address='$second_ref_address',
+    second_ref_relation='$second_ref_relation',
+    second_ref_mobile='$second_ref_mobile',
+    second_ref_email='$second_ref_email',
+    experience='$experience',
+    organization='$organization',
+    designation='$designation',
+    from_date='$from_date',
+    to_date='$to_date',
+    organization1='$organization1',
+    designation1='$designation1',
+    from_date1='$from_date1',
+    to_date1='$to_date1',
+    pune='$pune',
+    mumbai='$mumbai',
+    bangalore='$bangalore',
+    courseName='$courseName',
+    courseFees='$courseFees',
+    fee='$fee',
+    amount='$amount',
+    Schedule='$Schedule',
+    paymentType='$paymentType',
+    leftFees='$leftFees',
+    paymentMode='$paymentMode',
+    EMI_NO_1='$EMI_NO_1',
+    EMI_NO_1_date='$EMI_NO_1_date',
+    EMI_NO_1_Amount='$EMI_NO_1_Amount',
+    EMI_NO_2='$EMI_NO_2',
+    EMI_NO_2_date='$EMI_NO_2_date',
+    EMI_NO_2_Amount='$EMI_NO_2_Amount',
+    EMI_NO_3='$EMI_NO_3',
+    EMI_NO_3_date='$EMI_NO_3_date',
+    EMI_NO_3_Amount='$EMI_NO_3_Amount',
+    date_submission='$date_submission'
+WHERE id='$id'";
+
+
+                          
+                            $updateResult = mysqli_query($conn, $updateQuery);
+                        
+                            if ($updateResult) {
+                                echo "Data updated successfully!";
+                                // You can redirect to a different page or take other actions after successful update
+                            } else {
+                                echo "Error updating data: " . mysqli_error($conn);
+                            }
+                        }
+                    
+
+
+
+action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"    
